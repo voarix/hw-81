@@ -3,14 +3,13 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const LinkSchema = new Schema({
-    shortUrl: {
-        type: String,
-        required: [true, 'short url is required'],
-    },
     originalUrl: {
         type: String,
-        required: true,
-    }
+        required: [true, 'url is required'],
+    },
+    shortUrl: {
+        type: String,
+    },
 });
 
 const Link = mongoose.model('Link', LinkSchema);
