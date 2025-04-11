@@ -8,3 +8,7 @@ export interface ILinkRes {
   originalUrl: string;
   shortUrl: string;
 }
+
+interface ILinkForm {
+  originalUrl: string;
+}
